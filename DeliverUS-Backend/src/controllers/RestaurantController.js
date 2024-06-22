@@ -23,7 +23,7 @@ const index = async function (req, res) {
 // restaruant creation
 const create = async function (req, res) {
   const newRestaurant = Restaurant.build(req.body)
-  newRestaurant.userId = req.user.id
+  newRestaurant.userId = 1
   try {
     const restaurant = await newRestaurant.save()
     res.json(restaurant)

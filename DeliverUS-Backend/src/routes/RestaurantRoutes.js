@@ -8,6 +8,6 @@ const loadFileRoutes = function (app) {
   app.route('/restaurants/:restaurantId')
     .get(RestaurantController.show)
     .put(RestaurantController.update)
-    .put(RestaurantController.destroy)
+    .delete(RestaurantController.destroy)
 }
 export default loadFileRoutes
